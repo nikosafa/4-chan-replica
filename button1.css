@@ -1,46 +1,69 @@
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #eef2ff;
+    color: #222;
     margin: 0;
     padding: 20px;
 }
 
+/* Container for the thread (overall page container) */
 .thread {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    width: 600px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Post container */
+.post {
+    background-color: #d6daf0;
+    border: 1px solid #BFBFBF;
+    padding: 15px;
+    margin-bottom: 30px; /* Adds spacing below the original post */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Original post specific styling */
+.post.original {
+    width: 100%;
+    margin: 0 0 30px 0; /* More space below the original post */
+}
+
+/* Post header (username, date, etc.) */
 .post-header {
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
+/* Image in the post header */
 .post-image {
-    width: 100px;
+    width: 90px;
     height: auto;
     margin-right: 15px;
+    border: 1px solid #CCC;
 }
 
+/* Post title (main content in the header) */
 .post-title {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
+/* Green username text */
 .poster {
-    color: green;
+    color: #789922;
     font-style: italic;
 }
 
+/* Post content (text part) */
 .post-content {
-    margin-top: 10px;
+    padding: 10px 0;
 }
 
+/* Link color */
 .post-content a {
-    color: blue;
+    color: #0044BB;
     text-decoration: none;
 }
 
@@ -48,22 +71,38 @@ body {
     text-decoration: underline;
 }
 
+/* Replies container */
 .replies {
-    margin-top: 20px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds spacing between replies */
 }
 
+/* Individual reply styling (each reply as a separate box) */
 .reply {
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-    margin-top: 10px;
-    font-size: 13px;
+    background-color: #d6daf0; /* Same background color for replies */
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    max-width: 70%; /* Replies are shorter */
+    min-width: 40%; /* Minimum width for short comments */
+    margin-left: 10px; /* Slight indentation for replies */
+    word-wrap: break-word; /* Ensures long text doesn't overflow */
 }
 
+/* Quote text in red */
 .quote {
-    color: red;
+    color: #D00;
 }
 
+/* Reply text in bold */
 .reply-text {
     font-weight: bold;
-    color: orange;
+    color: #F60;
+}
+
+/* General formatting for smaller text like timestamps */
+.reply .poster {
+    color: #789922; /* Green for Anonymous posters */
 }
