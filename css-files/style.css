@@ -1,0 +1,143 @@
+
+
+
+body {
+    background: linear-gradient(to bottom,
+    #fed6af,
+    #fce1c3 25%,
+    #fff1d8 50%,
+    #ffffee 75%,
+    #ffffee 100%);
+    margin: 0;
+    height: auto; /* Allow body to expand with content */
+    padding: 0; /* Reset any default padding */
+}
+
+
+.logo {
+    margin: 20px 0; /* Add vertical space around the logo */
+    text-align: center; /* Center the logo */
+}
+
+
+.logo img {
+    height: 99.5px;
+    width: 256px;
+    border: none; /* Ensure no border */
+    display: block; /* Prevent any space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.boxIntro {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 20px auto; /* Center the box and add space above and below */
+    padding: 0;
+    border: 1px solid black;
+}
+
+
+.boxIntroTitle {
+    background-color: #880000;
+    padding: 15px;
+    color: white;
+}
+
+
+.boxIntroTitle h2 {
+    margin: 0;
+}
+
+
+.boxIntroDescipt {
+    padding: 20px;
+}
+
+
+.boxOverview {
+    background: white; /* White background for the overview box */
+    border: 1px solid black; /* Black border for the overview box */
+    width: 90%; /* Set width to be wider (adjust as needed) */
+    max-width: 800px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center the box and add space above and below */
+    padding: 0; /* Remove padding for the entire box */
+}
+
+
+.boxOverviwTitle {
+    background-color: #ffccaa; /* Light orange background for title */
+    padding: 15px; /* Padding for title area */
+    color: #880000; /* Text color for title */
+    margin: 0; /* Remove default margin */
+}
+
+
+.boxOverviwTitle h2 {
+    margin: 0; /* Remove default margin from h2 */
+}
+
+
+.overviewContent {
+    padding: 20px; /* Padding for the content area */
+    display: flex; /* Use flexbox for button alignment */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: space-between; /* Space between buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+
+.button {
+    background-color: #f0f0f0; /* Light gray background for buttons */
+    color: #880000; /* Text color for buttons */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid #ccc; /* Light gray border for buttons */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    flex: 0 48%; /* Allow buttons to take up about half the width each */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.button:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+
+
+
+.boxCreator {
+    background: white; /* White background for the creator box */
+    border: 1px solid black; /* Black border for the creator box */
+    width: 90%; /* Set width to be wider (adjust as needed) */
+    max-width: 800px; /* Maximum width for larger screens */
+    margin: 20px auto; /* Center the box and add space above and below */
+    padding: 0; /* Remove padding for the entire box */
+}
+
+
+.boxCreatorTitle {
+    background-color: #ffccaa; /* Light orange background for title */
+    padding: 15px; /* Padding for title area */
+    color: #880000; /* Text color for title */
+    margin: 0; /* Remove default margin */
+}
+
+
+.boxCreatorTitle h2 {
+    margin: 0; /* Remove default margin from h2 */
+}
+
+
+.creatorContent {
+    padding: 20px; /* Padding for the content area */
+}
+
+
+
+
+
