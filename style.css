@@ -96,7 +96,7 @@ body {
     padding: 10px; /* Padding for buttons */
     text-decoration: none; /* Remove underline from links */
     border: 1px solid #ccc; /* Light gray border for buttons */
-    border-radius: 4px; /* Slightly rounded corners */
+    border-radius: 0; /* Slightly rounded corners */
     transition: background-color 0.3s; /* Smooth background transition */
     flex: 0 48%; /* Allow buttons to take up about half the width each */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
