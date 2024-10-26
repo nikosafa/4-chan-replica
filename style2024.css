@@ -1,0 +1,105 @@
+/* Basic Reset and Body Styling */
+body {
+    background-color: #e7f0f9; /* Light blue for a soft, inviting base */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #1a1a1a; /* Dark gray for main text color for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Logo Section */
+.logo {
+    margin: 40px 0 20px;
+    text-align: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 6px #555555); /* Soft gray shadow for subtle depth */
+}
+
+/* Container Boxes */
+.boxIntro, .boxOverview, .boxCreator {
+    background: #ffffff; /* White background for content sections */
+    width: 90%;
+    max-width: 700px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.boxIntro:hover, .boxOverview:hover, .boxCreator:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Section Titles */
+.boxIntroTitle, .boxOverviwTitle, .boxCreatorTitle {
+    background-color: #004f7c; /* Deep blue for strong contrast */
+    padding: 18px;
+    color: #ffffff; /* White text for readability */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+
+.boxIntroTitle h2, .boxOverviwTitle h2, .boxCreatorTitle h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Text Content Areas */
+.boxIntroDescipt, .overviewContent, .creatorContent {
+    padding: 24px;
+    line-height: 1.6;
+    color: #1a1a1a; /* Dark gray for readability */
+}
+
+/* Overview Section Buttons */
+.overviewContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.button {
+    background-color: #007acc; /* Medium blue for button background */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(50% - 6px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for subtle depth */
+}
+
+.button:hover {
+    background-color: #005f99; /* Darker blue on hover for interactivity */
+    color: #f2f2f2; /* Slightly lighter text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .button {
+        padding: 12px 0;
+    }
+}
