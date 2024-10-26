@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2ff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Container for the thread (overall page container) */
+.thread {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1; /* Allow the replies section to grow */
+    overflow-y: auto; /* Allow replies to scroll */
+    padding-bottom: 100px; /* Add space at the bottom so the last reply doesn't get hidden under the input */
+}
+
+/* Replies container */
+.replies {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual reply styling (each reply as a separate box) */
+.reply {
+    background-color: #d6daf0;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    min-width: 40%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+/* Green text for poster names */
+.reply .poster {
+    color: #789922;
+    font-style: italic;
+}
+
+/* Reply text in bold */
+.reply-text {
+    font-weight: bold;
+    color: #F60;
+}
+
+/* Fixed input form styling */
+.reply-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eef2ff;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+/* Input field styling */
+.reply-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 800px;
+    font-size: 14px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+.reply-submit {
+    padding: 8px 16px;
+    background-color: #789922;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reply-submit:hover {
+    background-color: #567310;
+}
