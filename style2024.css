@@ -1,14 +1,12 @@
-/* Basic Reset and Body Styling */
-body {
-    background-color: #e7f0f9; /* Light blue for a soft, inviting base */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #1a1a1a; /* Dark gray for main text color for readability */
+
+
+/* Header styling */
+.header {
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: center; /* Center the logo within the page */
+    padding: 20px 0;
 }
 
 /* Logo Section */
@@ -22,84 +20,105 @@ body {
     width: auto;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 0 6px #555555); /* Soft gray shadow for subtle depth */
+    filter: drop-shadow(0 0 8px #00f7ff); /* Neon blue shadow */
+}
+
+/* Toggle button styling - positioned in the top-right */
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #005f99;
 }
 
 /* Container Boxes */
 .boxIntro, .boxOverview, .boxCreator {
-    background: #ffffff; /* White background for content sections */
+    background: #141820; /* Dark background for content sections */
     width: 90%;
     max-width: 700px;
     overflow: hidden;
     margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 247, 255, 0.2); /* Subtle neon shadow for depth */
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .boxIntro:hover, .boxOverview:hover, .boxCreator:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 4px 18px rgba(0, 247, 255, 0.3); /* Enhanced neon shadow on hover */
 }
 
 /* Section Titles */
 .boxIntroTitle, .boxOverviwTitle, .boxCreatorTitle {
-    background-color: #004f7c; /* Deep blue for strong contrast */
+    background-color: #00b4d8; /* Bright blue for contrast */
     padding: 18px;
-    color: #ffffff; /* White text for readability */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    color: #141820; /* Dark background for contrast with bright title */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .boxIntroTitle h2, .boxOverviwTitle h2, .boxCreatorTitle h2 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    letter-spacing: 1px;
 }
 
 /* Text Content Areas */
 .boxIntroDescipt, .overviewContent, .creatorContent {
     padding: 24px;
     line-height: 1.6;
-    color: #1a1a1a; /* Dark gray for readability */
+    color: #d;
 }
 
-/* Overview Section Buttons */
 .overviewContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 12px;
+    padding: 20px; /* Padding for the content area */
+    display: flex; /* Use flexbox for button alignment */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: space-between; /* Space between buttons */
+    gap: 10px; /* Space between buttons */
 }
 
+
+/* Button Styling */
 .button {
-    background-color: #007acc; /* Medium blue for button background */
-    color: #ffffff; /* White text for contrast */
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 calc(50% - 6px);
-    box-sizing: border-box;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for subtle depth */
+    background-color: #007acc; /* Light gray background for buttons */
+    color: white; /* Text color for buttons */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid #ccc; /* Light gray border for buttons */
+    border-radius: 0; /* Slightly rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    flex: 0 48%; /* Allow buttons to take up about half the width each */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .button:hover {
-    background-color: #005f99; /* Darker blue on hover for interactivity */
-    color: #f2f2f2; /* Slightly lighter text color on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    background-color: #e0e0e0; /* Darker gray on hover */
 }
 
-.button:active {
-    transform: scale(0.98);
-}
-
-/* Responsive Adjustments */
-@media (min-width: 768px) {
-    .button {
-        padding: 12px 0;
-    }
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #0a0e14; /* Dark navy blue for a cyberpunk feel */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d0d7de; /* Light gray for main text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }

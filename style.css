@@ -1,18 +1,15 @@
-
-
-
-body {
-    background: linear-gradient(to bottom,
-    #fed6af,
-    #fce1c3 25%,
-    #fff1d8 50%,
-    #ffffee 75%,
-    #ffffee 100%);
+/* Light Mode Styles */
+body.light-mode {
+    background: linear-gradient(to bottom, #fed6af, #fce1c3 25%, #fff1d8 50%, #ffffee 75%, #ffffee 100%);
     margin: 0;
-    height: auto; /* Allow body to expand with content */
-    padding: 0; /* Reset any default padding */
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #880000; /* Dark red for light mode text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
-
 
 .logo {
     margin: 20px 0; /* Add vertical space around the logo */
@@ -27,6 +24,26 @@ body {
     display: block; /* Prevent any space below the image */
     margin: 0 auto; /* Center the image horizontally */
 }
+
+/* Toggle button styling - positioned in the top-right */
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #880000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #ffffff;
+    color: #880000;
+}
+
 
 
 .boxIntro {
@@ -136,8 +153,4 @@ body {
 .creatorContent {
     padding: 20px; /* Padding for the content area */
 }
-
-
-
-
 
