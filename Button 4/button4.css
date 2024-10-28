@@ -8,6 +8,28 @@ body {
     flex-direction: column;
     height: 100vh; /* Full viewport height */
 }
+/* Toggle button styling */
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #789922;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: white;
+    color: #789922;
+}
+
+
+
 
 /* Container for the thread (overall page container) */
 .thread {

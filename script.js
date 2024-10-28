@@ -1,7 +1,7 @@
 
     function toggleStyle() {
-        const defaultStyle = document.getElementById("default-style");
-        const alternateStyle = document.getElementById("alternate-style");
+        const defaultStyle = document.querySelector("default-style");
+        const alternateStyle = document.querySelector("alternate-style");
 
         // Log current state for debugging
         console.log("Default style disabled:", defaultStyle.disabled);

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4chan Thread</title>
-    <link rel="stylesheet" type="text/css" href="button4.css" />
+    <link id="themeStylesheet" rel="stylesheet" type="text/css" href="button4.css" />
 </head>
 <body>
+<!-- Toggle button for light/dark mode -->
+<button class="toggle-button" onclick="toggleTheme()">Toggle Theme</button>
+
 <div class="thread">
     <!-- Replies section (initially empty) -->
     <div class="replies" id="replies"></div>

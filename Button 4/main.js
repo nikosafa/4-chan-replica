@@ -29,3 +29,14 @@ function submitReply() {
     // Clear the input field
     document.querySelector('#replyInput').value = '';  // Use # to select by ID
 }
+
+function toggleTheme() {
+    const themeLink = document.getElementById("themeStylesheet");
+
+    // Check the current theme and switch to the other one
+    if (themeLink.getAttribute("href") === "button4.css") {
+        themeLink.setAttribute("href", "button4-dark.css");
+    } else {
+        themeLink.setAttribute("href", "button4.css");
+    }
+}
