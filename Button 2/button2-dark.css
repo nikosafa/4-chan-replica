@@ -6,6 +6,26 @@ body.dark-mode {
     padding: 20px;
 }
 
+/* Toggle button styling with rounded corners */
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #005f99;
+}
+
+
 /* Thread Container */
 .thread {
     width: 100%;
