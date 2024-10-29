@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4chan Thread</title>
-    <link rel="stylesheet" type="text/css" href="button1.css" />
+    <title>Toggle Style Example</title>
+    <link id="default-style" rel="stylesheet" type="text/css" href="button1.css" />
+    <link id="alternate-style" rel="stylesheet" type="text/css" href="Button1-dark.css" disabled />
 </head>
-<body>
-<div class="thread">
+<body class="light-mode">
+<div class="header">
+    <button class="toggle-button" onclick="toggleStyle()">Toggle Blue 2024 Mode</button>
+</div>
 
-    <!-- Den originale post -->
+<div class="thread">
+    <!-- Original Post -->
     <div class="post original">
         <div class="post-header">
             <img src="images/OPE WALZ.png" height="598" width="382" class="post-image" />
-            <p class="post-title"></p>
-            A gay retard is trying to ban guns in one of the most anti-gun states
-            <span class="poster">Anonymous</span> 10/20/24(Sun)23:36:48 No.1354932
+            <p class="post-title">
+                A gay retard is trying to ban guns in one of the most anti-gun states
+                <span class="poster">Anonymous</span> 10/20/24(Sun)23:36:48 No.1354932
             </p>
         </div>
         <div class="post-content">
@@ -28,18 +32,16 @@
         </div>
     </div>
 
-    <!-- Kommentarer-->
+    <!-- Comments -->
     <div class="replies">
-
-        <!-- Første kommentar -->
+        <!-- Comment 1 -->
         <div class="reply">
             <span class="poster">Anonymous</span> 10/22/24(Tue)06:48:49 No.1355383<br>
             <span class="quote">&gt;&gt;1355341</span><br>
             <span class="reply-text">&gt;IF I DISAGREE WITH THEM THEY AREN'T HUMANS OR PEOPLE</span><br>
             Seek mental help before you hurt someone you love.
         </div>
-
-        <!-- Andet kommentar -->
+        <!-- Comment 2 -->
         <div class="reply">
             <span class="poster">Anonymous</span> 10/22/24(Tue)07:01:10 No.1355388<br>
             <span class="quote">&gt;&gt;1355383</span><br>
@@ -47,22 +49,9 @@
             <span class="quote">&gt;&gt;1355360</span><br>
             good post
         </div>
-
-        <!-- Trejde kommentar -->
-        <div class="reply">
-            <span class="poster">Anonymous</span> 10/22/24(Tue)17:40:24 No.1355464<br>
-            <span class="quote">&gt;&gt;1355310</span><br>
-            <span class="reply-text">&gt;the declaration of independence makes it clear the rights listed in the later documents come from god</span><br>
-            The Declaration of Independence isn't a legal document, unlike the US Constitution. Now point out where the words 'Commandment', 'Jesus' or 'God' appear in that latter legal document. We'll wait.
-        </div>
-
-        <!-- Fjerde kommentar -->
-        <div class="reply">
-            <span class="poster">Anonymous</span> 10/22/24(Tue)17:49:47 No.1355470<br>
-            <span class="quote">&gt;&gt;1355470</span>
-        </div>
-
+        <!-- Additional comments can be added here -->
     </div>
 </div>
+<script src="main1.js"></script>
 </body>
 </html>

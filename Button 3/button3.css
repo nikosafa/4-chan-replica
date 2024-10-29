@@ -1,8 +1,8 @@
 /* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eef2ff;
-    color: #222;
+    background-color: #eef2ff; /* Light background */
+    color: #222; /* Dark text color */
     margin: 0;
     padding: 20px;
 }
@@ -16,11 +16,11 @@ body {
 
 /* Post container */
 .post {
-    background-color: #d6daf0;
-    border: 1px solid #BFBFBF;
+    background-color: #d6daf0; /* Light post background */
+    border: 1px solid #BFBFBF; /* Light border */
     padding: 15px;
     margin-bottom: 30px; /* Adds spacing below the original post */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Original post specific styling */
@@ -41,7 +41,7 @@ body {
     width: 90px;
     height: auto;
     margin-right: 15px;
-    border: 1px solid #CCC;
+    border: 1px solid #CCC; /* Light border for images */
 }
 
 /* Post title (main content in the header) */
@@ -52,8 +52,8 @@ body {
 
 /* Green username text */
 .poster {
-    color: #789922;
-    font-style: italic;
+    color: #789922; /* Green color for usernames */
+    font-style: italic; /* Italic style for emphasis */
 }
 
 /* Post content (text part) */
@@ -63,12 +63,12 @@ body {
 
 /* Link color */
 .post-content a {
-    color: #0044BB;
-    text-decoration: none;
+    color: #0044BB; /* Blue color for links */
+    text-decoration: none; /* No underline by default */
 }
 
 .post-content a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Replies container */
@@ -82,9 +82,9 @@ body {
 /* Individual reply styling (each reply as a separate box) */
 .reply {
     background-color: #d6daf0; /* Same background color for replies */
-    border: 1px solid #CCCCCC;
+    border: 1px solid #CCCCCC; /* Light border for replies */
     padding: 10px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 70%; /* Replies are shorter */
     min-width: 40%; /* Minimum width for short comments */
     margin-left: 10px; /* Slight indentation for replies */
@@ -93,13 +93,13 @@ body {
 
 /* Quote text in red */
 .quote {
-    color: #D00;
+    color: #D00; /* Red color for quotes */
 }
 
 /* Reply text in bold */
 .reply-text {
     font-weight: bold;
-    color: #F60;
+    color: #F60; /* Orange color for reply text */
 }
 
 /* General formatting for smaller text like timestamps */
