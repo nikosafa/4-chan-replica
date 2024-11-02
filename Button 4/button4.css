@@ -6,7 +6,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; /* vh står for viewport height */
 }
 /* Toggle button styling */
 .toggle-button {
@@ -31,17 +31,17 @@ body {
 
 
 
-/* Container for the thread (overall page container) */
+/* Container for the trådene */
 .thread {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    flex-grow: 1; /* Allow the replies section to grow */
-    overflow-y: auto; /* Allow replies to scroll */
-    padding-bottom: 100px; /* Add space at the bottom so the last reply doesn't get hidden under the input */
+    flex-grow: 1; /* Lader svar sektionen vokse */
+    overflow-y: auto; /* Lader svar scrolle */
+    padding-bottom: 100px;
 }
 
-/* Replies container */
+/* Svar container */
 .replies {
     padding: 10px 0;
     display: flex;
@@ -49,7 +49,7 @@ body {
     gap: 15px;
 }
 
-/* Individual reply styling (each reply as a separate box) */
+/* Individuelle svars styling, hver svar har sin egen boks */
 .reply {
     background-color: #d6daf0;
     border: 1px solid #CCCCCC;
@@ -62,19 +62,19 @@ body {
     word-wrap: break-word;
 }
 
-/* Green text for poster names */
+/* Posterens navn bliver grønt */
 .reply .poster {
     color: #789922;
     font-style: italic;
 }
 
-/* Reply text in bold */
+/* Hvis de citere teksten bliver det rødt*/
 .reply-text {
     font-weight: bold;
     color: #F60;
 }
 
-/* Fixed input form styling */
+/* Fast input form styling */
 .reply-form {
     position: fixed;
     bottom: 0;
@@ -87,7 +87,7 @@ body {
     justify-content: center;
 }
 
-/* Input field styling */
+/* Indtastningsfeltstyling */
 .reply-input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -98,7 +98,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Submit button styling */
+/* Indsend knapstyling */
 .reply-submit {
     padding: 8px 16px;
     background-color: #789922;

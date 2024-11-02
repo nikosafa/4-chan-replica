@@ -13,7 +13,7 @@ body {
     padding-bottom: 100px;
 }
 
-/* Replies container with rounded corners */
+/* Svarbeholder med den nye styling */
 .replies .reply {
     background-color: #141820;
     border: 1px solid #00f7ff;
@@ -25,21 +25,21 @@ body {
     margin-left: 10px;
     margin-bottom: 15px;
     word-wrap: break-word;
-    border-radius: 15px; /* Rounded corners for a bubble effect */
+    border-radius: 15px;
 }
 
-/* Green text for poster names */
+
 .reply .poster {
     color: #00f7ff;
 }
 
-/* Reply text in bold */
+
 .reply-text {
     font-weight: bold;
     color: #ffcc00;
 }
 
-/* Fixed input form styling with rounded corners */
+/*Fast input form styling med det nye moderne look*/
 .reply-form {
     position: fixed;
     bottom: 0;
@@ -54,7 +54,7 @@ body {
     border-top-right-radius: 15px;
 }
 
-/* Rounded input field styling */
+/*Afrundet inputfelt-styling*/
 .reply-input {
     padding: 10px;
     border: 1px solid #00b4d8;
@@ -65,10 +65,10 @@ body {
     font-size: 14px;
     margin-right: 10px;
     box-sizing: border-box;
-    border-radius: 10px; /* Rounded input field */
+    border-radius: 10px;
 }
 
-/* Rounded submit button */
+
 .reply-submit {
     padding: 8px 16px;
     background-color: #007acc;
@@ -83,7 +83,7 @@ body {
     background-color: #005f99;
 }
 
-/* Toggle button styling with rounded corners */
+
 .toggle-button {
     position: absolute;
     top: 20px;

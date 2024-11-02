@@ -1,8 +1,8 @@
-/* General page styling */
+/* General styling for siden */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eef2ff; /* Light background */
-    color: #222; /* Dark text color */
+    background-color: #eef2ff;
+    color: #222;
     margin: 0;
     padding: 20px;
 }
@@ -27,102 +27,92 @@ body {
     color: #789922;
 }
 
-/* Container for the thread (overall page container) */
+/* Containers for selve tråden af post */
 .thread {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Post container */
+/* Post containeren */
 .post {
-    background-color: #d6daf0; /* Light post background */
-    border: 1px solid #BFBFBF; /* Light border */
+    background-color: #d6daf0;
+    border: 1px solid #BFBFBF;
     padding: 15px;
-    margin-bottom: 30px; /* Adds spacing below the original post */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 30px;
 }
 
-/* Original post specific styling */
+/* Original post styling */
 .post.original {
     width: 100%;
-    margin: 0 0 30px 0; /* More space below the original post */
+    margin: 0 0 30px 0;
 }
 
-/* Post header (username, date, etc.) */
+/* Styling for selve post headeren (brugernavn, dato, etc.) */
 .post-header {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    gap: 15px; /* giver mellemrum mellem billede og titel */
 }
 
-/* Image in the post header */
-.post-image {
-    width: 90px;
-    height: auto;
-    margin-right: 15px;
-    border: 1px solid #CCC; /* Light border for images */
-}
-
-/* Post title (main content in the header) */
+/* Post titlen */
 .post-title {
     font-size: 13px;
     font-weight: bold;
 }
 
-/* Green username text */
+/* Brugernavn */
 .poster {
-    color: #789922; /* Green color for usernames */
-    font-style: italic; /* Italic style for emphasis */
+    color: #789922;
+    font-style: italic;
 }
 
-/* Post content (text part) */
+/* Inholdet (teksten) i posten */
 .post-content {
     padding: 10px 0;
 }
 
-/* Link color */
+/* link farven */
 .post-content a {
-    color: #0044BB; /* Blue color for links */
-    text-decoration: none; /* No underline by default */
+    color: #0044BB;
+    text-decoration: none;
 }
 
 .post-content a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
-/* Replies container */
+/* Kommentar felterne */
 .replies {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adds spacing between replies */
+    gap: 15px;
 }
 
-/* Individual reply styling (each reply as a separate box) */
+/* Individuelle svar, hver svar i sin egen boks */
 .reply {
-    background-color: #d6daf0; /* Same background color for replies */
-    border: 1px solid #CCCCCC; /* Light border for replies */
+    background-color: #d6daf0;
+    border: 1px solid #CCCCCC;
     padding: 10px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 70%; /* Replies are shorter */
-    min-width: 40%; /* Minimum width for short comments */
-    margin-left: 10px; /* Slight indentation for replies */
-    word-wrap: break-word; /* Ensures long text doesn't overflow */
+    max-width: 70%; /* Den højeste længde en boks kan have */
+    min-width: 40%; /* Den mindste længde en boks kan have */
+    margin-left: 10px; /* Rykker kommentaren en smule til højre, så de står lidt forskudt fra hovedposten */
+    word-wrap: break-word; /* Sikre at lange tekster ikke går ud over boksen*/
 }
 
-/* Quote text in red */
+/* Qoutes de kommentere fra hovedposten er røde*/
 .quote {
-    color: #D00; /* Red color for quotes */
+    color: #D00;
 }
 
-/* Reply text in bold */
+
 .reply-text {
     font-weight: bold;
-    color: #F60; /* Orange color for reply text */
+    color: #F60;
 }
 
-/* General formatting for smaller text like timestamps */
+
 .reply .poster {
-    color: #789922; /* Green for Anonymous posters */
+    color: #789922;
 }
