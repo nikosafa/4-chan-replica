@@ -1,31 +1,31 @@
-/* Light Mode Styles */
+/* Lys tilstand */
 body.light-mode {
-    background: linear-gradient(to bottom, #fed6af, #fce1c3 25%, #fff1d8 50%, #ffffee 75%, #ffffee 100%);
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #880000; /* Dark red for light mode text */
+    background: linear-gradient(to bottom, #fed6af, #fce1c3 25%, #fff1d8 50%, #ffffee 75%, #ffffee 100%); /* Blød gradient-baggrund */
+    margin: 0; /* Fjern standard margin */
+    padding: 0; /* Fjern standard padding */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Angiv standard font */
+    color: #880000; /* Mørkerød tekstfarve for lys tilstand */
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Minimum højde på hele vinduet */
 }
 
+/* Logo-styling */
 .logo {
-    margin: 20px 0; /* Add vertical space around the logo */
-    text-align: center; /* Center the logo */
+    margin: 20px 0; /* Lodret afstand omkring logoet */
+    text-align: center; /* Centrer logoet */
 }
-
 
 .logo img {
     height: 99.5px;
     width: 256px;
-    border: none; /* Ensure no border */
-    display: block; /* Prevent any space below the image */
-    margin: 0 auto; /* Center the image horizontally */
+    border: none; /* Fjern kantlinje */
+    display: block; /* Undgå plads under billedet */
+    margin: 0 auto; /* Centrer billedet vandret */
 }
 
-/* Toggle button styling - positioned in the top-right */
+/* Knap til at skifte tema - placeret øverst til højre */
 .toggle-button {
     position: absolute;
     top: 20px;
@@ -33,124 +33,115 @@ body.light-mode {
     padding: 10px 15px;
     font-size: 14px;
     color: #ffffff;
-    background-color: #880000;
+    background-color: #880000; /* Mørkerød baggrundsfarve */
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Glidende overgang ved farveskift */
 }
 
 .toggle-button:hover {
     background-color: #ffffff;
-    color: #880000;
+    color: #880000; /* Omvendt farveskema ved hover */
 }
 
-
-
+/* Introduktionsboks */
 .boxIntro {
-    background: white;
+    background: white; /* Hvid baggrund */
     width: 90%;
     max-width: 800px;
     overflow: hidden;
-    margin: 20px auto; /* Center the box and add space above and below */
+    margin: 20px auto; /* Center boks og tilføj afstand over og under */
     padding: 0;
-    border: 1px solid black;
+    border: 1px solid black; /* Sort kantlinje */
 }
 
-
+/* Titel i introduktionsboksen */
 .boxIntroTitle {
-    background-color: #880000;
-    padding: 15px;
-    color: white;
+    background-color: #880000; /* Mørkerød baggrund */
+    padding: 15px; /* Indvendig afstand */
+    color: white; /* Hvid tekstfarve */
 }
-
 
 .boxIntroTitle h2 {
+    margin: 0; /* Fjern standard margen */
+}
+
+.boxIntroDescipt {
+    padding: 20px; /* Indvendig afstand i beskrivelsen */
+}
+
+/* Oversigtsboks */
+.boxOverview {
+    background: white; /* Hvid baggrund */
+    border: 1px solid black; /* Sort kantlinje */
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+/* Titel i oversigtsboksen */
+.boxOverviwTitle {
+    background-color: #ffccaa; /* Lys orange baggrund */
+    padding: 15px;
+    color: #880000; /* Mørkerød tekstfarve */
     margin: 0;
 }
 
-
-.boxIntroDescipt {
-    padding: 20px;
-}
-
-
-.boxOverview {
-    background: white; /* White background for the overview box */
-    border: 1px solid black; /* Black border for the overview box */
-    width: 90%; /* Set width to be wider (adjust as needed) */
-    max-width: 800px; /* Maximum width for larger screens */
-    margin: 20px auto; /* Center the box and add space above and below */
-    padding: 0; /* Remove padding for the entire box */
-}
-
-
-.boxOverviwTitle {
-    background-color: #ffccaa; /* Light orange background for title */
-    padding: 15px; /* Padding for title area */
-    color: #880000; /* Text color for title */
-    margin: 0; /* Remove default margin */
-}
-
-
 .boxOverviwTitle h2 {
-    margin: 0; /* Remove default margin from h2 */
+    margin: 0;
 }
 
-
+/* Indhold i oversigtsboksen */
 .overviewContent {
-    padding: 20px; /* Padding for the content area */
-    display: flex; /* Use flexbox for button alignment */
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-    justify-content: space-between; /* Space between buttons */
-    gap: 10px; /* Space between buttons */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Tillad knapperne at rykke til næste linje */
+    justify-content: space-between; /* Lige stor afstand mellem knapper */
+    gap: 10px; /* Afstand mellem knapper */
 }
 
-
+/* Knap-styling */
 .button {
-    background-color: #f0f0f0; /* Light gray background for buttons */
-    color: #880000; /* Text color for buttons */
-    text-align: center; /* Center text */
-    padding: 10px; /* Padding for buttons */
-    text-decoration: none; /* Remove underline from links */
-    border: 1px solid #ccc; /* Light gray border for buttons */
-    border-radius: 0; /* Slightly rounded corners */
-    transition: background-color 0.3s; /* Smooth background transition */
-    flex: 0 48%; /* Allow buttons to take up about half the width each */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #f0f0f0; /* Lysegrå baggrund */
+    color: #880000; /* Mørkerød tekstfarve */
+    text-align: center;
+    padding: 10px;
+    text-decoration: none; /* Fjern understregning */
+    border: 1px solid #ccc; /* Lysegrå kant */
+    border-radius: 0; /* Ingen rundede hjørner */
+    transition: background-color 0.3s; /* Glat overgang af baggrundsfarve */
+    flex: 0 48%; /* Knapper optager ca. halvdelen af bredden */
+    box-sizing: border-box; /* Inkluder padding og kant i den samlede bredde */
 }
-
 
 .button:hover {
-    background-color: #e0e0e0; /* Darker gray on hover */
+    background-color: #e0e0e0; /* Mørkere grå på hover */
 }
 
-
-
-
+/* Skaberboks */
 .boxCreator {
-    background: white; /* White background for the creator box */
-    border: 1px solid black; /* Black border for the creator box */
-    width: 90%; /* Set width to be wider (adjust as needed) */
-    max-width: 800px; /* Maximum width for larger screens */
-    margin: 20px auto; /* Center the box and add space above and below */
-    padding: 0; /* Remove padding for the entire box */
+    background: white;
+    border: 1px solid black;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
 }
 
-
+/* Titel i skaberboksen */
 .boxCreatorTitle {
-    background-color: #ffccaa; /* Light orange background for title */
-    padding: 15px; /* Padding for title area */
-    color: #880000; /* Text color for title */
-    margin: 0; /* Remove default margin */
+    background-color: #ffccaa;
+    padding: 15px;
+    color: #880000;
+    margin: 0;
 }
-
 
 .boxCreatorTitle h2 {
-    margin: 0; /* Remove default margin from h2 */
+    margin: 0;
 }
 
-
+/* Indhold i skaberboksen */
 .creatorContent {
-    padding: 20px; /* Padding for the content area */
+    padding: 20px;
 }
-

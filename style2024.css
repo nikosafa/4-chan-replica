@@ -1,15 +1,26 @@
-
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #0a0e14;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d0d7de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 
 /* Header styling */
 .header {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the logo within the page */
+    justify-content: center;
     padding: 20px 0;
 }
 
-/* Logo Section */
+
 .logo {
     margin: 40px 0 20px;
     text-align: center;
@@ -20,10 +31,10 @@
     width: auto;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 0 8px #00f7ff); /* Neon blue shadow */
+    filter: drop-shadow(0 0 8px #00f7ff); /* Da det er en png fil, kan man give den logo'et en form for baggrunds skygge */
 }
 
-/* Toggle button styling - positioned in the top-right */
+/* Toggle button styling */
 .toggle-button {
     position: absolute;
     top: 20px;
@@ -42,15 +53,15 @@
     background-color: #005f99;
 }
 
-/* Container Boxes */
+/* Container boksene */
 .boxIntro, .boxOverview, .boxCreator {
-    background: #141820; /* Dark background for content sections */
+    background: #141820;
     width: 90%;
     max-width: 700px;
     overflow: hidden;
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 247, 255, 0.2); /* Subtle neon shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 247, 255, 0.2); /* Giver boksene en svag neon baggrund */
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -61,9 +72,9 @@
 
 /* Section Titles */
 .boxIntroTitle, .boxOverviwTitle, .boxCreatorTitle {
-    background-color: #00b4d8; /* Bright blue for contrast */
+    background-color: #00b4d8;
     padding: 18px;
-    color: #141820; /* Dark background for contrast with bright title */
+    color: #141820;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     font-weight: bold;
@@ -84,41 +95,28 @@
 }
 
 .overviewContent {
-    padding: 20px; /* Padding for the content area */
-    display: flex; /* Use flexbox for button alignment */
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-    justify-content: space-between; /* Space between buttons */
-    gap: 10px; /* Space between buttons */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Gør at knapperne falder ned til næste linje */
+    justify-content: space-between;
+    gap: 10px;
 }
 
 
-/* Button Styling */
+/* Knappernes styling */
 .button {
-    background-color: #007acc; /* Light gray background for buttons */
-    color: white; /* Text color for buttons */
-    text-align: center; /* Center text */
-    padding: 10px; /* Padding for buttons */
-    text-decoration: none; /* Remove underline from links */
-    border: 1px solid #ccc; /* Light gray border for buttons */
-    border-radius: 10px; /* Slightly rounded corners */
-    transition: background-color 0.3s; /* Smooth background transition */
-    flex: 0 48%; /* Allow buttons to take up about half the width each */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    flex: 0 48%; /* Lader knapperne tage op halvdelen af bredden af hinanden */
+    box-sizing: border-box;
 }
 
 .button:hover {
-    background-color: #e0e0e0; /* Darker gray on hover */
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #0a0e14; /* Dark navy blue for a cyberpunk feel */
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #d0d7de; /* Light gray for main text color */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    background-color: #e0e0e0;
 }
