@@ -53,15 +53,15 @@ body {
 .post-header {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    gap: 15px; /* Space between the image and title */
 }
 
-/* Image in the post header */
 .post-image {
-    width: 90px;
-    height: auto;
-    margin-right: 15px;
-    border: 1px solid #CCC; /* Light border for images */
+    max-width: 100%; /* Ensures image does not exceed container width */
+    height: auto; /* Maintains aspect ratio */
+    width: 200px; /* Slightly larger default width */
+    border: 1px solid #CCC; /* Light border around the image */
+    border-radius: 5px; /* Optional: Rounded corners */
 }
 
 /* Post title (main content in the header) */
