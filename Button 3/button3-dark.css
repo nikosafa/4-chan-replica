@@ -1,12 +1,11 @@
 body.dark-mode {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Dark background */
-    color: #e0e0e0; /* Light text color */
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     margin: 0;
     padding: 20px;
 }
 
-/* Toggle button styling with rounded corners */
 .toggle-button {
     position: absolute;
     top: 20px;
@@ -26,17 +25,17 @@ body.dark-mode {
 }
 
 
-/* Thread Container */
+/* Trådens container */
 .thread {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Original Post Styling */
+/* Den originale posts styling */
 .post {
-    background-color: #333; /* Dark post background */
-    border: 1px solid #0099cc; /* Border color */
+    background-color: #333;
+    border: 1px solid #0099cc;
     padding: 15px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 5px rgba(0, 153, 204, 0.3);
@@ -48,39 +47,40 @@ body.dark-mode {
     margin-bottom: 30px;
 }
 
-/* Header and Image Styling */
+/* Styling for headeren og billedet */
 .post-header {
     display: flex;
     align-items: center;
     padding: 10px 0;
+    gap: 15px; /* giver mellemrum mellem billede og titel */
 }
 
 .post-image {
-    width: 90px;
+    max-width: 100%; /* Dette sikre at billedet ikke bliver større end selve containere */
     height: auto;
-    margin-right: 15px;
-    border: 1px solid #00ace6; /* Border color */
+    width: 200px;
+    border: 1px solid #00ace6;
     border-radius: 8px;
 }
 
-/* Text Styling for Poster and Title */
+/* Styling for teksten for post og titel */
 .post-title {
     font-size: 13px;
     font-weight: bold;
 }
 
 .poster {
-    color: #00bfff; /* Lighter color for poster */
+    color: #00bfff;
     font-style: italic;
 }
 
-/* Content Styling */
+
 .post-content {
     padding: 10px 0;
 }
 
 .post-content a {
-    color: #1e90ff; /* Bright link color */
+    color: #1e90ff;
     text-decoration: none;
 }
 
@@ -97,8 +97,8 @@ body.dark-mode {
 }
 
 .reply {
-    background-color: #444; /* Dark reply background */
-    border: 1px solid #007acc; /* Border color */
+    background-color: #444;
+    border: 1px solid #007acc;
     padding: 10px;
     box-shadow: 0px 0px 3px rgba(0, 122, 204, 0.2);
     max-width: 70%;
@@ -109,10 +109,10 @@ body.dark-mode {
 }
 
 .quote {
-    color: #ff6347; /* Color for quoted text */
+    color: #ff6347;
 }
 
 .reply-text {
     font-weight: bold;
-    color: #ff9900; /* Reply text color */
+    color: #ff9900;
 }
