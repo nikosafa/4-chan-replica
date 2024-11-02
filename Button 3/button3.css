@@ -27,6 +27,13 @@ body {
     color: #789922;
 }
 
+.post-header img {
+    max-width: 100%; /* Dette sikre at billedet ikke bliver større end selve containere */
+    height: auto;
+    width: 400px;
+}
+
+
 /* Containers for selve tråden af post */
 .thread {
     width: 100%;
