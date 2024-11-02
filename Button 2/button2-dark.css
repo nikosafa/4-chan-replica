@@ -32,6 +32,12 @@ body.dark-mode {
     margin: 0 auto;
 }
 
+.post-header img {
+    max-width: 100%; /* Dette sikre at billedet ikke bliver større end selve containere */
+    height: auto;
+    width: 200px;
+}
+
 /* Den originale posts styling */
 .post {
     background-color: #333;
