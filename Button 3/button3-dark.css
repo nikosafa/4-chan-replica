@@ -24,6 +24,11 @@ body.dark-mode {
     background-color: #005f99;
 }
 
+.post-header img {
+    max-width: 100%; /* Dette sikre at billedet ikke bliver større end selve containere */
+    height: auto;
+    width: 400px;
+}
 
 /* Trådens container */
 .thread {
